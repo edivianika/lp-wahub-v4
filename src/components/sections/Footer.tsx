@@ -34,7 +34,7 @@ export function Footer() {
               <li><a href="#faq" className="hover:text-green-600 transition-colors">FAQ</a></li>
               <li><a href="https://wa.me/6281234567890" className="hover:text-green-600 transition-colors">WhatsApp Support</a></li>
               <li><a href="#" className="hover:text-green-600 transition-colors">Tutorial</a></li>
-              <li><a href="#" className="hover:text-green-600 transition-colors">Privacy Policy</a></li>
+              <li><a href="/privacy-policy.html" className="hover:text-green-600 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
