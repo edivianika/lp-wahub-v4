@@ -33,8 +33,8 @@ export function Footer() {
             <ul className="space-y-4 text-slate-500 font-medium">
               <li><a href="#faq" className="hover:text-green-600 transition-colors">FAQ</a></li>
               <li><a href="https://wa.me/6281234567890" className="hover:text-green-600 transition-colors">WhatsApp Support</a></li>
-              <li><a href="#" className="hover:text-green-600 transition-colors">Tutorial</a></li>
-              <li><a href="/privacy-policy.html" className="hover:text-green-600 transition-colors">Privacy Policy</a></li>
+              <li><a href="/privacy" className="hover:text-green-600 transition-colors">Kebijakan Privasi</a></li>
+              <li><a href="/terms" className="hover:text-green-600 transition-colors">Syarat &amp; Ketentuan</a></li>
             </ul>
           </div>
         </div>
