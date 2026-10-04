@@ -142,7 +142,10 @@ export function Hero() {
                       <div className="w-2.5 h-2.5 rounded-full bg-slate-200 group-hover/window:bg-green-400 transition-colors" />
                     </div>
                     <div className="h-3 w-px bg-slate-100" />
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">WaHub Pro</span>
+                    <div className="flex items-center gap-1.5">
+                      <img src="/logo-40.png" alt="" width={14} height={14} className="w-3.5 h-3.5 object-contain" />
+                      <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">WaHub Pro</span>
+                    </div>
                   </div>
                   <div className="flex gap-2">
                     <div className="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center border border-slate-100 hover:bg-slate-100 transition-colors cursor-pointer"><Search className="w-3.5 h-3.5 text-slate-400" /></div>

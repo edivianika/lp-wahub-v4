@@ -3,88 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Syarat &amp; Ketentuan Layanan - WaHub</title>
+    <title>Syarat &amp; Ketentuan - WaHub</title>
     <meta
       name="description"
-      content="Syarat &amp; Ketentuan Layanan WaHub — ketentuan penggunaan CRM WhatsApp, risiko WhatsApp non-official, akun, pembayaran, dan batasan tanggung jawab."
+      content="Syarat dan Ketentuan Layanan WaHub untuk penggunaan CRM WhatsApp, akun, pembayaran, dan batasan tanggung jawab."
     />
     <link rel="canonical" href="https://wahub.online/terms" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <style>
       :root {
         color-scheme: light;
+        --bg: #f0fdf4;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --body: #334155;
+        --border: #dcfce7;
+        --accent: #16a34a;
+        --accent-soft: #dcfce7;
+        --warn-bg: #fff7ed;
+        --warn-border: #fb923c;
+        --warn-text: #9a3412;
       }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #f8fafc;
-        color: #0f172a;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background:
+          radial-gradient(ellipse 80% 50% at 10% -10%, #bbf7d0 0%, transparent 55%),
+          radial-gradient(ellipse 60% 40% at 100% 0%, #dbeafe 0%, transparent 50%),
+          var(--bg);
+        color: var(--text);
         line-height: 1.7;
       }
       .container {
         max-width: 860px;
         margin: 0 auto;
-        padding: 48px 20px 80px;
+        padding: 40px 20px 80px;
       }
       .back {
-        display: inline-block;
-        margin-bottom: 20px;
-        color: #16a34a;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--accent);
         text-decoration: none;
         font-weight: 600;
         font-size: 0.95rem;
+        margin-bottom: 20px;
       }
-      .back:hover {
-        text-decoration: underline;
+      .back:hover { text-decoration: underline; }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 32px 28px;
+        box-shadow: 0 10px 40px rgba(22, 163, 74, 0.06);
       }
       h1 {
-        font-size: 2rem;
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
         margin: 0 0 8px;
+        letter-spacing: -0.02em;
       }
-      h2 {
-        margin-top: 32px;
-        font-size: 1.25rem;
-      }
-      p,
-      li {
-        color: #334155;
+      .subtitle {
+        margin: 0 0 8px;
+        color: var(--body);
+        font-weight: 600;
       }
       .muted {
-        color: #64748b;
+        color: var(--muted);
         font-size: 0.95rem;
+        margin: 0 0 24px;
       }
-      .card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 16px;
-        padding: 28px;
+      h2 {
+        margin-top: 36px;
+        margin-bottom: 12px;
+        font-size: 1.2rem;
+        letter-spacing: -0.01em;
       }
-      a {
-        color: #16a34a;
-      }
-      .warning {
-        background: #fff7ed;
+      p, li { color: var(--body); }
+      ul { padding-left: 1.25rem; }
+      li { margin-bottom: 0.4rem; }
+      a { color: var(--accent); }
+      .warn {
+        background: var(--warn-bg);
         border: 1px solid #fed7aa;
-        border-radius: 12px;
+        border-left: 4px solid var(--warn-border);
+        color: var(--warn-text);
         padding: 16px 18px;
+        border-radius: 0 12px 12px 0;
         margin: 16px 0;
       }
-      .footer-note {
+      .warn p, .warn li { color: var(--warn-text); }
+      .warn strong { color: #7c2d12; }
+      .footer {
         margin-top: 40px;
-        padding-top: 24px;
-        border-top: 1px solid #e2e8f0;
-        color: #64748b;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
         font-size: 0.9rem;
+      }
+      @media (min-width: 640px) {
+        .card { padding: 40px 44px; }
       }
     </style>
   </head>
   <body>
     <main class="container">
       <a class="back" href="/">← Kembali ke Beranda</a>
-      <div class="card">
+      <article class="card">
         <h1>Syarat &amp; Ketentuan Layanan</h1>
-        <p class="muted">WaHub — CRM WhatsApp untuk Tim Sales</p>
-        <p class="muted">Terakhir diperbarui: 4 Oktober 2026</p>
+        <p class="subtitle">WaHub — CRM WhatsApp untuk Tim Sales</p>
         <p class="muted">
+          Terakhir diperbarui: 4 Oktober 2026<br />
           Versi publik:
           <a href="https://wahub.online/terms">https://wahub.online/terms</a>
           ·
@@ -120,7 +153,7 @@
         </ul>
 
         <h2>3. Ketentuan WhatsApp &amp; Risiko Penggunaan</h2>
-        <div class="warning">
+        <div class="warn">
           <p>
             <strong>PENTING:</strong> WaHub menggunakan teknologi yang terhubung
             ke WhatsApp melalui metode non-official (termasuk namun tidak
@@ -128,47 +161,47 @@
             metode ini mungkin tidak sepenuhnya sesuai dengan Syarat Layanan
             atau Kebijakan Penggunaan WhatsApp/Meta yang berlaku.
           </p>
+          <p>
+            <strong>Risiko yang Mungkin Terjadi:</strong> Meta (pemilik
+            WhatsApp) berhak membatasi, memblokir, atau menangguhkan akun
+            WhatsApp jika mendeteksi penggunaan yang dianggap melanggar
+            kebijakan mereka. Risiko tersebut meliputi namun tidak terbatas
+            pada:
+          </p>
+          <ul>
+            <li>Pemblokiran nomor WhatsApp secara permanen atau sementara</li>
+            <li>Pembatasan fitur atau kemampuan akun</li>
+            <li>
+              Kehilangan akses ke data chat dan kontak yang tersimpan di akun
+            </li>
+            <li>
+              Dampak pada operasional bisnis yang bergantung pada nomor tersebut
+            </li>
+          </ul>
+          <p>
+            <strong>Perusahaan kami (WaHub) TIDAK BERTANGGUNG JAWAB</strong>
+            atas segala bentuk:
+          </p>
+          <ul>
+            <li>Pemblokiran nomor WhatsApp oleh Meta/WhatsApp</li>
+            <li>Pembatasan atau penangguhan akun oleh Meta/WhatsApp</li>
+            <li>Kehilangan akses ke akun WhatsApp</li>
+            <li>
+              Kerugian bisnis, pendapatan, data, atau bentuk kerugian lainnya
+              yang timbul akibat tindakan Meta/WhatsApp atau akibat penggunaan
+              Layanan
+            </li>
+          </ul>
+          <p>
+            <strong
+              >Anda menggunakan Layanan sepenuhnya atas risiko dan tanggung
+              jawab Anda sendiri.</strong
+            >
+            Kami merekomendasikan agar Anda mematuhi batas pengiriman pesan,
+            tidak mengirim spam, dan menggunakan Layanan untuk keperluan bisnis
+            yang sah serta sesuai etika.
+          </p>
         </div>
-        <p>
-          <strong>Risiko yang Mungkin Terjadi:</strong> Meta (pemilik WhatsApp)
-          berhak membatasi, memblokir, atau menangguhkan akun WhatsApp jika
-          mendeteksi penggunaan yang dianggap melanggar kebijakan mereka. Risiko
-          tersebut meliputi namun tidak terbatas pada:
-        </p>
-        <ul>
-          <li>Pemblokiran nomor WhatsApp secara permanen atau sementara</li>
-          <li>Pembatasan fitur atau kemampuan akun</li>
-          <li>
-            Kehilangan akses ke data chat dan kontak yang tersimpan di akun
-          </li>
-          <li>
-            Dampak pada operasional bisnis yang bergantung pada nomor tersebut
-          </li>
-        </ul>
-        <p>
-          <strong
-            >Perusahaan kami (WaHub) TIDAK BERTANGGUNG JAWAB</strong
-          >
-          atas segala bentuk:
-        </p>
-        <ul>
-          <li>Pemblokiran nomor WhatsApp oleh Meta/WhatsApp</li>
-          <li>Pembatasan atau penangguhan akun oleh Meta/WhatsApp</li>
-          <li>Kehilangan akses ke akun WhatsApp</li>
-          <li>
-            Kerugian bisnis, pendapatan, data, atau bentuk kerugian lainnya yang
-            timbul akibat tindakan Meta/WhatsApp atau akibat penggunaan Layanan
-          </li>
-        </ul>
-        <p>
-          <strong
-            >Anda menggunakan Layanan sepenuhnya atas risiko dan tanggung jawab
-            Anda sendiri.</strong
-          >
-          Kami merekomendasikan agar Anda mematuhi batas pengiriman pesan, tidak
-          mengirim spam, dan menggunakan Layanan untuk keperluan bisnis yang sah
-          serta sesuai etika.
-        </p>
 
         <h2>4. Penggunaan yang Bertanggung Jawab</h2>
         <p>Anda setuju untuk:</p>
@@ -233,8 +266,9 @@
         <h2>10. Hukum yang Berlaku</h2>
         <p>
           Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik
-          Indonesia. Setiap perselisihan yang timbul sehubungan dengan Ketentuan
-          ini akan diselesaikan di pengadilan yang berwenang di Indonesia.
+          Indonesia. Setiap perselisihan yang timbul sehubungan dengan
+          Ketentuan ini akan diselesaikan di pengadilan yang berwenang di
+          Indonesia.
         </p>
 
         <h2>11. Privasi</h2>
@@ -251,8 +285,8 @@
           kunjungi <a href="https://wahub.online">https://wahub.online</a>.
         </p>
 
-        <p class="footer-note">© 2026 WaHub. Semua hak dilindungi.</p>
-      </div>
+        <p class="footer">© 2026 WaHub. Semua hak dilindungi.</p>
+      </article>
     </main>
   </body>
 </html>

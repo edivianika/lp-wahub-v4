@@ -6,80 +6,112 @@
     <title>Kebijakan Privasi - WaHub</title>
     <meta
       name="description"
-      content="Kebijakan Privasi WaHub — bagaimana kami mengumpulkan, menggunakan, dan melindungi data pengguna, termasuk data Google Sign-In dan Google Contacts."
+      content="Kebijakan Privasi WaHub: cara kami mengumpulkan, menggunakan, dan melindungi data pengguna, termasuk Google Sign-In, Google Contacts, dan WhatsApp."
     />
     <link rel="canonical" href="https://wahub.online/privacy" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <style>
       :root {
         color-scheme: light;
+        --bg: #f0fdf4;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --body: #334155;
+        --border: #dcfce7;
+        --accent: #16a34a;
+        --accent-soft: #dcfce7;
       }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #f8fafc;
-        color: #0f172a;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background:
+          radial-gradient(ellipse 80% 50% at 10% -10%, #bbf7d0 0%, transparent 55%),
+          radial-gradient(ellipse 60% 40% at 100% 0%, #dbeafe 0%, transparent 50%),
+          var(--bg);
+        color: var(--text);
         line-height: 1.7;
       }
       .container {
         max-width: 860px;
         margin: 0 auto;
-        padding: 48px 20px 80px;
+        padding: 40px 20px 80px;
       }
       .back {
-        display: inline-block;
-        margin-bottom: 20px;
-        color: #16a34a;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--accent);
         text-decoration: none;
         font-weight: 600;
         font-size: 0.95rem;
+        margin-bottom: 20px;
       }
-      .back:hover {
-        text-decoration: underline;
+      .back:hover { text-decoration: underline; }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 32px 28px;
+        box-shadow: 0 10px 40px rgba(22, 163, 74, 0.06);
       }
       h1 {
-        font-size: 2rem;
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
         margin: 0 0 8px;
+        letter-spacing: -0.02em;
       }
-      h2 {
-        margin-top: 32px;
-        font-size: 1.25rem;
-      }
-      p,
-      li {
-        color: #334155;
+      .subtitle {
+        margin: 0 0 8px;
+        color: var(--body);
+        font-weight: 600;
       }
       .muted {
-        color: #64748b;
+        color: var(--muted);
         font-size: 0.95rem;
+        margin: 0 0 24px;
       }
-      .card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 16px;
-        padding: 28px;
+      h2 {
+        margin-top: 36px;
+        margin-bottom: 12px;
+        font-size: 1.2rem;
+        letter-spacing: -0.01em;
       }
-      a {
-        color: #16a34a;
+      p, li { color: var(--body); }
+      ul { padding-left: 1.25rem; }
+      li { margin-bottom: 0.4rem; }
+      a { color: var(--accent); }
+      .note {
+        background: var(--accent-soft);
+        border-left: 4px solid var(--accent);
+        padding: 14px 16px;
+        border-radius: 0 12px 12px 0;
+        margin: 16px 0;
       }
-      .footer-note {
+      .footer {
         margin-top: 40px;
-        padding-top: 24px;
-        border-top: 1px solid #e2e8f0;
-        color: #64748b;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
         font-size: 0.9rem;
+      }
+      @media (min-width: 640px) {
+        .card { padding: 40px 44px; }
       }
     </style>
   </head>
   <body>
     <main class="container">
       <a class="back" href="/">← Kembali ke Beranda</a>
-      <div class="card">
+      <article class="card">
         <h1>Kebijakan Privasi</h1>
-        <p class="muted">WaHub — CRM WhatsApp untuk Tim Sales</p>
-        <p class="muted">Terakhir diperbarui: 4 Oktober 2026</p>
+        <p class="subtitle">WaHub — CRM WhatsApp untuk Tim Sales</p>
         <p class="muted">
-          Versi publik:
-          <a href="https://wahub.online/privacy">https://wahub.online/privacy</a>
+          Terakhir diperbarui: 4 Oktober 2026<br />
+          Versi publik: <a href="https://wahub.online/privacy">https://wahub.online/privacy</a>
         </p>
 
         <h2>1. Pendahuluan</h2>
@@ -87,9 +119,9 @@
           Kebijakan Privasi ini menjelaskan bagaimana WaHub (“kami”, “Layanan”)
           mengumpulkan, menggunakan, menyimpan, membagikan, dan melindungi
           informasi pengguna saat Anda mengakses situs
-          <a href="https://wahub.online">https://wahub.online</a> atau
-          menggunakan produk WaHub. Dengan menggunakan Layanan, Anda menyetujui
-          praktik yang dijelaskan di sini.
+          <a href="https://wahub.online">https://wahub.online</a> atau menggunakan
+          produk WaHub. Dengan menggunakan Layanan, Anda menyetujui praktik yang
+          dijelaskan di sini.
         </p>
         <p>
           Kebijakan ini juga mencakup penggunaan data pengguna Google sesuai
@@ -131,11 +163,11 @@
         </p>
         <ol>
           <li>
-            <strong>Login dengan Google (OAuth Sign-In).</strong> Kami
-            mengakses informasi profil dasar yang Anda izinkan (misalnya nama,
-            alamat email, dan foto profil) untuk membuat atau masuk ke akun
-            WaHub. Data ini digunakan hanya untuk autentikasi, identitas akun,
-            dan komunikasi terkait layanan.
+            <strong>Login dengan Google (OAuth Sign-In).</strong> Kami mengakses
+            informasi profil dasar yang Anda izinkan (misalnya nama, alamat
+            email, dan foto profil) untuk membuat atau masuk ke akun WaHub. Data
+            ini digunakan hanya untuk autentikasi, identitas akun, dan
+            komunikasi terkait layanan.
           </li>
           <li>
             <strong>Integrasi Google Contacts (opsional).</strong> Jika Anda
@@ -147,12 +179,8 @@
             untuk iklan, penjualan data, atau pelatihan model AI pihak ketiga.
           </li>
         </ol>
-        <p>
-          <strong
-            >Cara kami mengakses, menggunakan, menyimpan, dan membagikan data
-            Google:</strong
-          >
-        </p>
+
+        <p><strong>Cara kami mengakses, menggunakan, menyimpan, dan membagikan data Google:</strong></p>
         <ul>
           <li>
             <strong>Akses:</strong> melalui OAuth 2.0 Google setelah Anda
@@ -179,9 +207,8 @@
         <p>
           Anda dapat mencabut akses Google kapan saja melalui pengaturan akun
           Google Anda
-          (<a href="https://myaccount.google.com/permissions"
-            >myaccount.google.com/permissions</a
-          >) dan/atau memutus koneksi Google Contacts di dalam WaHub.
+          (<a href="https://myaccount.google.com/permissions" rel="noopener noreferrer" target="_blank">myaccount.google.com/permissions</a>)
+          dan/atau memutus koneksi Google Contacts di dalam WaHub.
         </p>
 
         <h2>4. Data WhatsApp &amp; Pesan</h2>
@@ -276,17 +303,15 @@
         </p>
 
         <h2>13. Kontak</h2>
-        <p>
-          Untuk pertanyaan terkait Kebijakan Privasi atau data pengguna Google,
-          hubungi:
-        </p>
+        <p>Untuk pertanyaan terkait Kebijakan Privasi atau data pengguna Google, hubungi:</p>
         <ul>
           <li>
             Email:
             <a href="mailto:admin@wahub.online">admin@wahub.online</a>
           </li>
           <li>
-            Situs: <a href="https://wahub.online">https://wahub.online</a>
+            Situs:
+            <a href="https://wahub.online">https://wahub.online</a>
           </li>
           <li>
             Syarat Layanan:
@@ -294,8 +319,8 @@
           </li>
         </ul>
 
-        <p class="footer-note">© 2026 WaHub. Semua hak dilindungi.</p>
-      </div>
+        <p class="footer">© 2026 WaHub. Semua hak dilindungi.</p>
+      </article>
     </main>
   </body>
 </html>

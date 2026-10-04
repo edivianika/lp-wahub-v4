@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { Logo } from '../ui/Logo';
 import { cn } from '../../lib/utils';
 
 export function Navbar() {
@@ -28,12 +29,7 @@ export function Navbar() {
       isScrolled ? 'bg-white/80 backdrop-blur-xl border-slate-200/60 py-3 shadow-sm' : 'bg-transparent border-transparent py-6'
     )}>
       <div className="container max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <div className="flex items-center gap-2.5 group cursor-pointer">
-          <div className="w-8 h-8 bg-green-600 rounded-xl flex items-center justify-center shadow-lg shadow-green-200 group-hover:scale-110 transition-transform">
-            <div className="w-2.5 h-2.5 bg-white rounded-full" />
-          </div>
-          <span className="font-display font-bold text-2xl text-slate-900 tracking-tight">WaHub</span>
-        </div>
+        <Logo />
 
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map(link => (

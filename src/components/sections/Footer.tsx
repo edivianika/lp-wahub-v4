@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Logo } from '../ui/Logo';
 
 export function Footer() {
   return (
@@ -7,12 +8,11 @@ export function Footer() {
       <div className="container max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-16 mb-24">
           <div className="col-span-2">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center shadow-lg shadow-green-600/20">
-                <span className="text-white font-black text-xl italic">W</span>
-              </div>
-              <span className="text-2xl font-black tracking-tighter text-slate-900">WaHub<span className="text-green-600">.</span></span>
-            </div>
+            <Logo
+              className="mb-8"
+              markClassName="w-10 h-10"
+              textClassName="text-2xl font-black tracking-tighter"
+            />
             <p className="text-lg text-slate-500 max-w-sm leading-relaxed">
               WhatsApp CRM & AI Superpowers untuk agen properti modern di Indonesia.
             </p>
